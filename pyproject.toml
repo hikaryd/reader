@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "reader"
+version = "0.1.0"
+description = ""
+authors = ["hikary <86579751+hikaryd@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+textual = "^0.52.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 88
+ignore-init-module-imports = true
+cache-dir = "~/.cache/ruff"
+output-format = "pylint"
+extend-ignore = ["E402"]
+
+[tool.ruff.lint]
+select = ["I", "F"]
+
+[tool.ruff.format]
+quote-style = "single"
+skip-magic-trailing-comma = false
+line-ending = "auto"
