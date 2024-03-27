@@ -8,6 +8,8 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 textual = "^0.52.1"
+toml = "^0.10.2"
+ebooklib = "^0.18"
 
 
 [build-system]
