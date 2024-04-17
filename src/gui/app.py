@@ -1,15 +1,15 @@
 from textual.app import App, ComposeResult
-from textual.widgets import Header
 
 from components.footer import ReaderFooter
+from components.header import ReaderHeader
 
 
 class Reader(App):
-    TITLE = 'Terminal book reader'
-    SUB_TITLE = 'Read books in the terminal'
+
+    COMMANDS = {}
 
     def compose(self) -> ComposeResult:
-        yield Header()
+        yield ReaderHeader()
         yield ReaderFooter()
 
 
